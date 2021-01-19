@@ -14,4 +14,5 @@ This repository contains the demo for Gender and Region classification model
 In this model, we convert the audio to image of mel-spectrogram and use DenseNet to train our classifier
 
 Visit branch `quan` for further details
+
 `git checkout quan`
