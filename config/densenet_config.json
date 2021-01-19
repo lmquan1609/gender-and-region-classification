@@ -1,0 +1,15 @@
+{
+    "data_dir": "data/3seconds/store_spectrograms/",
+    "h5_dir": "data/hdf5",
+    "dataaug": true,
+    "pretrained": true,
+    "finetuned": false,
+    "scheduler": true,
+    "model": "densenet",
+    "batch_size": 32,
+    "num_workers": 8,
+    "epochs": 70,
+    "lr": 1e-4,
+    "weight_decay": 1e-3,
+    "checkpoint_dir": "output/checkpoint/densenet/"
+}

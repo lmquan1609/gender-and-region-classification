@@ -1,24 +1,30 @@
-# Voice-based Gender and Region Classification
-This repository contains the demo for Gender and Region classification model
+# Config
+Need to install some pip
+```
+pip install torch==1.7.1+cu101 torchvision==0.8.2+cu101 torchaudio==0.7.2 -f https://download.pytorch.org/whl/torch_stable.html
 
-## Dependencies
-```
-pip install -r requirements.txt
-```
+# if linux is installed; otherwise; don't need to install
+pip install pickle5
 
-## Launch the Demo
-1. Download the [model](https://drive.google.com/file/d/1_IQxXXoTSsCYOPNV18FAXer0JFzCXK1T/view?usp=sharing) then put it in `UI/model`
-2. Launch the Demo
-```
-python UI/app.py
+pip install tensorboardx
 ```
 
-## Modeling
-### Melspectrogram-based model
-In this model, we convert the audio to image of mel-spectrogram and use DenseNet to train our classifier
+# Data Preparation
+1. Download the [data](https://drive.google.com/file/d/1hKiioqSPhk4n5Xz-KbNBrZXBWlBFOABP/view?usp=sharing) and then unzip it in the root directory of repository
 
-Visit branch `quan` for further details
+2. Convert data to images of mel-spectrogram which is stored in pickle files
 
 ```
-git checkout quan
+python preprocessing.py --data-dir data/wav16000/ --store-dir data/3seconds/store_spectrograms/
+```
+
+# Training
+```
+python train.py --config-path config/densenet_config.json
+```
+
+# Inference
+To generate the accuracy on testing dataset
+```
+python inference.py --config-path config/densenet_config.json --model-path path/to/pytorch/model
 ```

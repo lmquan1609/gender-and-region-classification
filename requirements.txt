@@ -1,8 +1,0 @@
-torch>=1.7.1
-torchvision>=0.8.2
-torchaudio>=0.7.2
-flask>=1.1.2
-pyaudio>=0.2.11
-numpy
-scipy
-scikit-learn
