@@ -1,0 +1,8 @@
+3seconds/
+Final/
+__pycache__/
+preprocessdata/__pycache__/
+pretrained/
+groundtruth/
+runs/
+
