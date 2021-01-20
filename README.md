@@ -24,9 +24,9 @@ git checkout melspectrogram
 ```
 
 ### Deep feature-based model and low level based model
-In this model, we convert the audio to low level feature include time domain and freq domain, then use simple model to classify. Also use Multi-scale model to learn feature from raw signal.
+In this model, we convert the audio to low level feature include time domain and freq domain, then use simple model to classify. We also use Multi-scale model to learn feature from raw signal.
 
-Visit branch 'WavemsNet' for further details
+Visit branch `WavemsNet` for further details
 ```
 git checkout WavemsNet
 ```
