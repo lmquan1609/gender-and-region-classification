@@ -17,8 +17,8 @@ python UI/app.py
 ### Melspectrogram-based model
 In this model, we convert the audio to image of mel-spectrogram and use DenseNet to train our classifier
 
-Visit branch `quan` for further details
+Visit branch `melspectrogram` for further details
 
 ```
-git checkout quan
+git checkout melspectrogram
 ```
